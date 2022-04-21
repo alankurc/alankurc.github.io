@@ -58,7 +58,17 @@ body {background: #dddddd; color: #4c4d4d; font-family: "Poppins", sans-serif;}
 .popup-email .success {color: #74af27; display: block; margin-top: 20px; line-height: normal;}
 .popup-email .error {color: #ea5555; display: block; margin-top: 20px; line-height: normal;}
 /* POPUP */
-#home{background-image: url("../images/bg-home.jpg"); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;}
+/*#home{background-image: url("../images/bg-home.jpg"); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;}*/
+
+#home{animation: changeBg 3s infinite; background-size: cover; background-repeat: no-repeat; background-attachment: fixed;}
+@keyframes changeBg{
+    0%, 100%  {background-image: url("../images/bg/bg1.jpg");}
+    20% {background-image: url("../images/bg/bg2.jpg");}
+    40% {background-image: url("../images/bg/bg3.jpg");}
+    60% {background-image: url("../images/bg/bg4.jpg");}
+    80% {background-image: url("../images/bg/bg5.jpg");}
+}
+
 /*--- Preloader Magnific Popup ----*/
 .mfp-container .preloader {background: transparent;}
 .mfp-container .preloader .lds-ellipsis div {background: #fff;}
