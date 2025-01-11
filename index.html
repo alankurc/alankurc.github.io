@@ -78,7 +78,7 @@
     <div class="container">
         <div class="row personal-profile">
             <div class="col-md-4 personal-profile__avatar">
-                <img src="assets/img/img_avatar.jpg" alt="Alan Kurc" title="Alan Kurc" class="img-fluid">
+                <img src="assets/img/photo-perfil.jpg" alt="Alan Kurc" title="Alan Kurc" class="img-fluid">
             </div>
             <div class="col-md-8">
                 <p class="personal-profile__name">Alan Kurc_</p>
@@ -86,7 +86,7 @@
                 <div class="personal-profile__contacts">
                     <dl class="contact-list contact-list__opacity-titles">
                         <dt>Edad:</dt>
-                        <dd><span id="edad"></span></dd>
+                        <dd><span id="age"></span></dd>
                         <dt>MBTI:</dt>
                         <dd>ENTJ-A</dd>
                         <dt>Email:</dt>
@@ -254,9 +254,10 @@
             <span>HTML</span>
             <span>CSS</span>
             <span>JavaScript</span>
-            <span>ReacJS</span>
+            <span>ReactJS</span>
             <span>TypeScript</span>
             <span>NodeJS</span>
+            <span>Jest & Supertest</span>
             <span class="skill-tooltip" data-toggle="tooltip" data-placement="top" title="Laravel">PHP</span>
             <span>MySQL</span>
             <span>WordPress</span>
@@ -343,313 +344,187 @@
 <!--Resume-->
 
 <!--Portfolio-->
-<section id="portfolio" class="container-fluid section">
+<section id="portfolio" class="container section pb-0">
     <div class="container">
         <article class="row">
             <div class="col-md-12">
                 <h2 id="portfolio_header" class="section__title">Mi portfolio_</h2>
             </div>
         </article>
-        <article class="row portfolio-menu">
-            <div class="col-md-12">
-                <nav>
-                    <ul>
-                        <li><a href="index.html" data-portfolio-target-tag="all">Todas</a></li>
-                        <li><a href="index.html" data-portfolio-target-tag="web">Web</a></li>
-                        <li><a href="index.html" data-portfolio-target-tag="ecommerce">Ecommerce</a></li>
-                        <li><a href="index.html" data-portfolio-target-tag="personales">Proyectos Personales</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </article>
     </div>
-    <section class="row justify-content-center portfolio-cards">
-        <article class="col-12 col-xl-6 mb-3 mb-xl-4" data-portfolio-tag="web">
-            <div class="row project-card">
-                <div class="col-md-6 col-lg-5 project-card__img">
-                    <img class="" src="assets/img/spectra.jpg" alt="SPECTRA Technologies" title="SPECTRA Technologies">
+    <section class="row">
+        <div class="col-md-12 section__resume resume-list mb-0">
+            <article class="resume-list__block portfolio">
+                <div class="d-flex justify-content-between">
+                    <h2 class="resume-list__block-title mb-0">Fundación de Gestión y Desarrollo</h2>
+                    <p class="resume-list__block-title mb-0">2025</p>
                 </div>
-                <div class="col-md-6 col-lg-7 project-card__info">
-                    <h3 class="project-card__title">SPECTRA Technologies</h3>
-                    <p class="project-card__description">Empresa dedicada al desarrollo de soluciones de seguridad, fiscalización, rastreo y comunicación para competencias de automovilismo y motociclismo.</p>
-
-                    <p class="project-card__stack">Stack:</p>
-                    <ul class="tags">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
-                        <li>PHP</li>
-                    </ul>
-                    <div class="d-flex justify-content-between align-items-center pt-3 pt-md-5">
-                        <p class="project-card__stack mb-0">2024</p>
-                        <a href="https://www.spectra-tec.com/" target="_blank" class="project-card__link mt-0">spectra-tec.com</a>
-                    </div>
+                <div class="d-flex justify-content-between">
+                    <p class="resume-list__block-date">Stack: HTML - CSS - PHP - JS</p>
+                    <a href="http://www.fgd.org.ar/" target="_blank" class="resume-list__block-date">fgd.org.ar</a>
                 </div>
-            </div>
-        </article>
-        <article class="col-12 col-xl-6 mb-3 mb-xl-4" data-portfolio-tag="web">
-            <div class="row project-card">
-                <div class="col-md-6 col-lg-5 project-card__img">
-                    <img class="" src="assets/img/hutch.jpg" alt="HUTCH Hamburguesas" title="HUTCH Hamburguesas">
+            </article>
+            <article class="resume-list__block portfolio">
+                <div class="d-flex justify-content-between">
+                    <h2 class="resume-list__block-title mb-0">Tamini & Biaggi - Odontología Integral</h2>
+                    <p class="resume-list__block-title mb-0">2024</p>
                 </div>
-                <div class="col-md-6 col-lg-7 project-card__info">
-                    <h3 class="project-card__title">HUTCH</h3>
-                    <p class="project-card__description mb-0">Web desarrollada para un local de hamburguesas.</p>
-                    <p class="project-card__description">Tiene un sistema de gestion hecho en PHP (CRUD) para poder modificar los productos.</p>
-
-                    <p class="project-card__stack">Stack:</p>
-                    <ul class="tags">
-                        <li>React</li>
-                        <li>SCSS</li>
-                        <li>PHP <small>(backend)</small></li>
-                        <li>Less</li>
-                    </ul>
-                    <div class="d-flex justify-content-between align-items-center pt-3 pt-md-5">
-                        <p class="project-card__stack mb-0">2023</p>
-                        <a href="https://hutch.com/" target="_blank" class="project-card__link mt-0">hutch.com</a>
-                    </div>
+                <div class="d-flex justify-content-between">
+                    <p class="resume-list__block-date">Stack: HTML - CSS - JS</p>
+                    <a href="https://taminibiaggiodontologia.com/" target="_blank" class="resume-list__block-date">taminibiaggiodontologia.com</a>
                 </div>
-            </div>
-        </article>
-        <article class="col-12 col-xl-6 mb-3 mb-xl-4" data-portfolio-tag="web">
-            <div class="row project-card">
-                <div class="col-md-6 col-lg-5 project-card__img">
-                    <img class="" src="assets/img/dbsound.jpg" alt="DBSound" title="DBSound">
+            </article>
+            <article class="resume-list__block portfolio">
+                <div class="d-flex justify-content-between">
+                    <h2 class="resume-list__block-title mb-0">VGFC Gloves</h2>
+                    <p class="resume-list__block-title mb-0">2024</p>
                 </div>
-                <div class="col-md-6 col-lg-7 project-card__info">
-                    <h3 class="project-card__title">DBSound</h3>
-                    <p class="project-card__description">Empresa especializada en sistemas de sonido y ambientacion acustica.</p>
-
-                    <p class="project-card__stack">Stack:</p>
-                    <ul class="tags">
-                        <li>WordPress</li>
-                    </ul>
-                    <div class="d-flex justify-content-between align-items-center pt-3 pt-md-5">
-                        <p class="project-card__stack mb-0">2023</p>
-                        <a href="https://dbsoundesign.com/" target="_blank" class="project-card__link mt-0">dbsoundesign.com</a>
-                    </div>
+                <div class="d-flex justify-content-between">
+                    <p class="resume-list__block-date">Stack: WORDPRESS (ecommerce)</p>
+                    <a href="https://vgfcgloves.es/" target="_blank" class="resume-list__block-date">vgfcgloves.es</a>
                 </div>
-            </div>
-        </article>
-        <article class="col-12 col-xl-6 mb-3 mb-xl-4" data-portfolio-tag="web">
-            <div class="row project-card">
-                <div class="col-md-6 col-lg-5 project-card__img">
-                    <img src="assets/img/odontologiathames.jpg" alt="Odontologia Thames" title="Odontologia Thames">
+            </article>
+            <article class="resume-list__block portfolio">
+                <div class="d-flex justify-content-between">
+                    <h2 class="resume-list__block-title mb-0">Grupo Frangla - Desarrollo Inmobilirio</h2>
+                    <p class="resume-list__block-title mb-0">2024</p>
                 </div>
-                <div class="col-md-6 col-lg-7 project-card__info">
-                    <h3 class="project-card__title">Odontologia Thames</h3>
-                    <p class="project-card__description">Landing realizada para un consultorio odontologico.</p>
-
-                    <p class="project-card__stack">Stack:</p>
-                    <ul class="tags">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
-                    </ul>
-                    <div class="d-flex justify-content-between align-items-center pt-3 pt-md-5">
-                        <p class="project-card__stack mb-0">2023</p>
-                        <a href="https://odontologiathames.com/" target="_blank" class="project-card__link mt-0">odontologiathames.com</a>
-                    </div>
+                <div class="d-flex justify-content-between">
+                    <p class="resume-list__block-date">Stack: HTML - CSS - JS - PHP</p>
+                    <a href="https://grupofrangla.com/" target="_blank" class="resume-list__block-date">grupofrangla.com</a>
                 </div>
-            </div>
-        </article>
-        <article class="col-12 col-xl-6 mb-3 mb-xl-4" data-portfolio-tag="web">
-            <div class="row project-card">
-                <div class="col-md-6 col-lg-5 project-card__img">
-                    <img class="" src="assets/img/modularq.jpg" alt="ModulARQ" title="ModulARQ">
+            </article>
+            <article class="resume-list__block portfolio">
+                <div class="d-flex justify-content-between">
+                    <h2 class="resume-list__block-title mb-0">SPECTRA Technologies</h2>
+                    <p class="resume-list__block-title mb-0">2024</p>
                 </div>
-                <div class="col-md-6 col-lg-7 project-card__info">
-                    <h3 class="project-card__title">ModulARQ</h3>
-                    <p class="project-card__description">Modularq es la marca de viviendas modulables y trasladables de Arquiplast.</p>
-
-                    <p class="project-card__stack">Stack:</p>
-                    <ul class="tags">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
-                        <li>PHP</li>
-                    </ul>
-                    <div class="d-flex justify-content-between align-items-center pt-3 pt-md-5">
-                        <p class="project-card__stack mb-0">2023</p>
-                        <a href="https://arquiplast.com.ar/construccionesmodulares/" target="_blank" class="project-card__link mt-0">arquiplast.com.ar/construccionesmodulares</a>
-                    </div>
+                <div class="d-flex justify-content-between">
+                    <p class="resume-list__block-date">Stack: HTML - CSS - PHP - JS</p>
+                    <a href="https://www.spectra-tec.com/" target="_blank" class="resume-list__block-date">spectra-tec.com</a>
                 </div>
-            </div>
-        </article>
-        <article class="col-12 col-xl-6 mb-3 mb-xl-4" data-portfolio-tag="web">
-            <div class="row project-card">
-                <div class="col-md-6 col-lg-5 project-card__img">
-                    <img class="" src="assets/img/movilhauss.jpg" alt="MovilHauss" title="MovilHauss">
+            </article>
+            <article class="resume-list__block portfolio">
+                <div class="d-flex justify-content-between">
+                    <h2 class="resume-list__block-title mb-0">HUTCH</h2>
+                    <p class="resume-list__block-title mb-0">2024</p>
                 </div>
-                <div class="col-md-6 col-lg-7 project-card__info">
-                    <h3 class="project-card__title">MovilHauss</h3>
-                    <p class="project-card__description">Empresa referente en el mercado de la construcción de viviendas modulares.</p>
-
-                    <p class="project-card__stack">Stack:</p>
-                    <ul class="tags">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
-                        <li>PHP</li>
-                    </ul>
-                    <div class="d-flex justify-content-between align-items-center pt-3 pt-md-5">
-                        <p class="project-card__stack mb-0">2022</p>
-                        <a href="https://movilhauss.com/" target="_blank" class="project-card__link mt-0">movilhauss.com</a>
-                    </div>
+                <div class="d-flex justify-content-between">
+                    <p class="resume-list__block-date">Stack: REACT - SCSS - PHP (backend) - LESS (backend)</p>
+                    <a href="https://hutch.com/" target="_blank" class="resume-list__block-date">hutch.com</a>
                 </div>
-            </div>
-        </article>
-        <article class="col-12 col-xl-6 mb-3 mb-xl-4" data-portfolio-tag="web">
-            <div class="row project-card">
-                <div class="col-md-6 col-lg-5 project-card__img">
-                    <img class="" src="assets/img/festival-caminatas-caminatas.jpg" alt="Festival de Caminatas - Caminatas" title="Festival de Caminatas - Caminatas">
+            </article>
+            <article class="resume-list__block portfolio">
+                <div class="d-flex justify-content-between">
+                    <h2 class="resume-list__block-title mb-0">DBSound</h2>
+                    <p class="resume-list__block-title mb-0">2023</p>
                 </div>
-                <div class="col-md-6 col-lg-7 project-card__info">
-                    <h3 class="project-card__title">Festival de Caminatas - Caminatas</h3>
-                    <p class="project-card__description mb-0">Mapa interactivo con las caminatas de todos los años.</p>
-                    <p class="project-card__description">Se utilizo la libreria leaflet.js junto a Mapbox como motor para el mapa.</p>
-
-                    <p class="project-card__stack">Stack:</p>
-                    <ul class="tags">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
-                    </ul>
-                    <div class="d-md-flex justify-content-between align-items-center pt-3 pt-md-5">
-                        <p class="project-card__stack mb-0">2023</p>
-                        <a href="https://festivaldecaminatas.com.ar/caminatas/" target="_blank" class="project-card__link mt-0">festivaldecaminatas.com.ar/caminatas</a>
-                    </div>
+                <div class="d-flex justify-content-between">
+                    <p class="resume-list__block-date">Stack: WORDPRESS</p>
+                    <a href="https://dbsoundesign.com/" target="_blank" class="resume-list__block-date">(discontinued) dbsoundesign.com</a>
                 </div>
-            </div>
-        </article>
-        <article class="col-12 col-xl-6 mb-3 mb-xl-4" data-portfolio-tag="web">
-            <div class="row project-card">
-                <div class="col-md-6 col-lg-5 project-card__img">
-                    <img class="" src="assets/img/festival-caminatas.jpg" alt="Festival de Caminatas" title="Festival de Caminatas">
+            </article>
+            <article class="resume-list__block portfolio">
+                <div class="d-flex justify-content-between">
+                    <h2 class="resume-list__block-title mb-0">Odontologia Thames</h2>
+                    <p class="resume-list__block-title mb-0">2023</p>
                 </div>
-                <div class="col-md-6 col-lg-7 project-card__info">
-                    <h3 class="project-card__title">Festival de Caminatas</h3>
-                    <p class="project-card__description">Es un festival en el cual se recorren las calles de los distintos barrios a través de las múltiples miradas de los líderes para poner en valor la diversidad
-                        cultural urbana.</p>
-                    <p class="project-card__stack">Stack:</p>
-                    <ul class="tags">
-                        <li>WordPress</li>
-                    </ul>
-                    <div class="d-flex justify-content-between align-items-center pt-3 pt-md-5">
-                        <p class="project-card__stack mb-0">2022</p>
-                        <a href="https://festivaldecaminatas.com.ar/" target="_blank" class="project-card__link mt-0">festivaldecaminatas.com.ar</a>
-                    </div>
+                <div class="d-flex justify-content-between">
+                    <p class="resume-list__block-date">Stack: HTML - CSS - JS</p>
+                    <a href="https://odontologiathames.com/" target="_blank" class="resume-list__block-date">odontologiathames.com</a>
                 </div>
-            </div>
-        </article>
-        <article class="col-12 col-xl-6 mb-3 mb-xl-4" data-portfolio-tag="ecommerce">
-            <div class="row project-card">
-                <div class="col-md-6 col-lg-5 project-card__img">
-                    <img class="" src="assets/img/arquiplast.jpg" alt="Arquiplast" title="Arquiplast">
+            </article>
+            <article class="resume-list__block portfolio">
+                <div class="d-flex justify-content-between">
+                    <h2 class="resume-list__block-title mb-0">ModulARQ</h2>
+                    <p class="resume-list__block-title mb-0">2023</p>
                 </div>
-                <div class="col-md-6 col-lg-7 project-card__info">
-                    <h3 class="project-card__title">Arquiplast</h3>
-                    <p class="project-card__description">La tienda fue diseñado y desarrollado en conjunto con la agencia
-                        Fuego Digital.</p>
-
-                    <p class="project-card__stack">Stack:</p>
-                    <ul class="tags">
-                        <li>WordPress</li>
-                        <li>PHP</li>
-                    </ul>
-                    <div class="d-flex justify-content-between align-items-center pt-3 pt-md-5">
-                        <p class="project-card__stack mb-0">2021</p>
-                        <a href="https://arquiplast.com.ar/" target="_blank" class="project-card__link  mt-0">arquiplast.com.ar</a>
-                    </div>
+                <div class="d-flex justify-content-between">
+                    <p class="resume-list__block-date">Stack: HTML - CSS - JS - PHP</p>
+                    <a href="https://arquiplast.com.ar/construccionesmodulares/" target="_blank" class="resume-list__block-date">arquiplast.com.ar/construccionesmodulares</a>
                 </div>
-            </div>
-        </article>
-        <article class="col-12 col-xl-6 mb-3 mb-xl-4" data-portfolio-tag="web">
-            <div class="row project-card">
-                <div class="col-md-6 col-lg-5 project-card__img">
-                    <img class="" src="assets/img/microhistorias.jpg" alt="MicroHistorias" title="MicroHistorias">
+            </article>
+            <article class="resume-list__block portfolio">
+                <div class="d-flex justify-content-between">
+                    <h2 class="resume-list__block-title mb-0">MovilHauss</h2>
+                    <p class="resume-list__block-title mb-0">2023</p>
                 </div>
-                <div class="col-md-6 col-lg-7 project-card__info">
-                    <h3 class="project-card__title">MicroHistorias</h3>
-                    <p class="project-card__description">Microhistorias es un proyecto que busca crear un relato colectivo a partir de historias individuales.</p>
-
-                    <p class="project-card__stack">Stack:</p>
-                    <ul class="tags">
-                        <li>WordPress</li>
-                    </ul>
-                    <div class="d-flex justify-content-between align-items-center pt-3 pt-md-5">
-                        <p class="project-card__stack mb-0">2022</p>
-                        <a href="https://microhistorias.com.ar/" target="_blank" class="project-card__link mt-0">microhistorias.com.ar</a>
-                    </div>
+                <div class="d-flex justify-content-between">
+                    <p class="resume-list__block-date">Stack: HTML - CSS - JS - PHP</p>
+                    <a href="https://movilhauss.com/" target="_blank" class="resume-list__block-date">movilhauss.com</a>
                 </div>
-            </div>
-        </article>
-        <article class="col-12 col-xl-6 mb-3 mb-xl-4" data-portfolio-tag="ecommerce">
-            <div class="row project-card">
-                <div class="col-md-6 col-lg-5 project-card__img">
-                    <img class="" src="assets/img/hogar-tecnologia.jpg" alt="Hogar y Tecnología" title="Hogar y Tecnología">
+            </article>
+            <article class="resume-list__block portfolio">
+                <div class="d-flex justify-content-between">
+                    <h2 class="resume-list__block-title mb-0">Festival de Caminatas - Caminatas</h2>
+                    <p class="resume-list__block-title mb-0">2023</p>
                 </div>
-                <div class="col-md-6 col-lg-7 project-card__info">
-                    <h3 class="project-card__title">Hogar y Tecnología</h3>
-                    <p class="project-card__description">La tienda fue diseñada y desarrollada para una casa de venta de
-                        electrodomésticos y productos varios.</p>
-
-                    <p class="project-card__stack">Stack:</p>
-                    <ul class="tags">
-                        <li>WordPress</li>
-                    </ul>
-                    <div class="d-flex justify-content-between align-items-center pt-3 pt-md-5">
-                        <p class="project-card__stack mb-0">2021</p>
-                        <a href="https://hogarytecnologia.com.ar/" target="_blank"
-                           class="project-card__link  mt-0">hogarytecnologia.com.ar</a>
-                    </div>
+                <div class="d-flex justify-content-between">
+                    <p class="resume-list__block-date">Stack: HTML - CSS - JS (mapbox)</p>
+                    <a href="https://festivaldecaminatas.com.ar/caminatas/" target="_blank" class="resume-list__block-date">festivaldecaminatas.com.ar/caminatas</a>
                 </div>
-            </div>
-        </article>
-        <article class="col-12 col-xl-6 mb-3 mb-xl-4" data-portfolio-tag="personales">
-            <div class="row project-card">
-                <div class="col-md-6 col-lg-5 project-card__img">
-                    <img class="" src="assets/img/pangea.jpg" alt="Agencia Pangea" title="Agencia Pangea">
+            </article>
+            <article class="resume-list__block portfolio">
+                <div class="d-flex justify-content-between">
+                    <h2 class="resume-list__block-title mb-0">Festival de Caminatas</h2>
+                    <p class="resume-list__block-title mb-0">2022</p>
                 </div>
-                <div class="col-md-6 col-lg-7 project-card__info">
-                    <h3 class="project-card__title">Agencia Pangea</h3>
-                    <p class="project-card__description">La página fue realizada como una parte del trabajo final para la
-                        tesis de la carrera.</p>
-
-                    <p class="project-card__stack">Stack:</p>
-                    <ul class="tags">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
-                    </ul>
-                    <div class="d-flex justify-content-between align-items-center pt-3 pt-md-5">
-                        <p class="project-card__stack mb-0">2021</p>
-                        <a href="https://akurc.com/pangea.github.io/" target="_blank" class="project-card__link mt-0">agencia-pangea.tech</a>
-                    </div>
+                <div class="d-flex justify-content-between">
+                    <p class="resume-list__block-date">Stack: WORDPRESS</p>
+                    <a href="https://festivaldecaminatas.com.ar/" target="_blank" class="resume-list__block-date">festivaldecaminatas.com.ar</a>
                 </div>
-            </div>
-        </article>
-        <article class="col-12 col-xl-6 mb-3 mb-xl-4" data-portfolio-tag="web">
-            <div class="row project-card">
-                <div class="col-md-6 col-lg-5 project-card__img">
-                    <img class="" src="assets/img/mallorcadesignday.jpg" alt="#MallorcaDesignDay" title="#MallorcaDesignDay">
+            </article>
+            <article class="resume-list__block portfolio">
+                <div class="d-flex justify-content-between">
+                    <h2 class="resume-list__block-title mb-0">Arquiplast</h2>
+                    <p class="resume-list__block-title mb-0">2021</p>
                 </div>
-                <div class="col-md-6 col-lg-7 project-card__info">
-                    <h3 class="project-card__title">#MallorcaDesignDay</h3>
-                    <p class="project-card__description">Página diseñada y desarrollada en conjunto con la agencia Estudio
-                        Fluir para el certamen de moda que se realiza anualmente en Mallorca.</p>
-
-                    <p class="project-card__stack">Stack:</p>
-                    <ul class="tags">
-                        <li>WordPress</li>
-                    </ul>
-                    <div class="d-flex justify-content-between align-items-center pt-3 pt-md-5">
-                        <p class="project-card__stack mb-0">2019</p>
-                        <a href="https://www.mallorcadesignday.es/" target="_blank" class="project-card__link mt-0">mallorcadesignday.es</a>
-                    </div>
+                <div class="d-flex justify-content-between">
+                    <p class="resume-list__block-date">Stack: WORDPRESS (ecommerce)</p>
+                    <a href="https://arquiplast.com.ar/" target="_blank" class="resume-list__block-date">(discontinued) arquiplast.com.ar</a>
                 </div>
-            </div>
-        </article>
+            </article>
+            <article class="resume-list__block portfolio">
+                <div class="d-flex justify-content-between">
+                    <h2 class="resume-list__block-title mb-0">MicroHistorias</h2>
+                    <p class="resume-list__block-title mb-0">2021</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p class="resume-list__block-date">Stack: WORDPRESS</p>
+                    <a href="https://microhistorias.com.ar/" target="_blank" class="resume-list__block-date">microhistorias.com.ar</a>
+                </div>
+            </article>
+            <article class="resume-list__block portfolio">
+                <div class="d-flex justify-content-between">
+                    <h2 class="resume-list__block-title mb-0">Hogar y Tecnología</h2>
+                    <p class="resume-list__block-title mb-0">2021</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p class="resume-list__block-date">Stack: WORDPRESS (ecommerce)</p>
+                    <a href="https://hogarytecnologia.com.ar/" target="_blank" class="resume-list__block-date">(discontinued) hogarytecnologia.com.ar</a>
+                </div>
+            </article>
+            <article class="resume-list__block portfolio">
+                <div class="d-flex justify-content-between">
+                    <h2 class="resume-list__block-title mb-0">Agencia Pangea</h2>
+                    <p class="resume-list__block-title mb-0">2021</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p class="resume-list__block-date">Stack: HTML - CSS - JS</p>
+                    <a href="https://akurc.com/pangea.github.io/" target="_blank" class="resume-list__block-date">agencia-pangea.tech</a>
+                </div>
+            </article>
+            <article class="resume-list__block portfolio">
+                <div class="d-flex justify-content-between">
+                    <h2 class="resume-list__block-title mb-0">#MallorcaDesignDaya</h2>
+                    <p class="resume-list__block-title mb-0">2019</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p class="resume-list__block-date">Stack: HTML - CSS - JS</p>
+                    <a href="https://www.mallorcadesignday.es/" target="_blank" class="resume-list__block-date">mallorcadesignday.es</a>
+                </div>
+            </article>
+        </div>
     </section>
 </section>
 <!--Portfolio-->
@@ -659,7 +534,7 @@
     <section class="container py-3">
         <div class="row">
             <div class="col-12 text-center text-white">
-                <p class="mb-0"><span id="fecha"></span> - Alan Kurc</p>
+                <p class="mb-0"><span id="year"></span> - Alan Kurc</p>
             </div>
         </div>
     </section>
@@ -678,8 +553,8 @@
 <script>
     var ano = (new Date).getFullYear();
     $(document).ready(function () {
-        $("#fecha").text(ano);
-        $("#edad").text(ano - 1997);
+        $("#year").text(ano);
+        $("#age").text(ano - 1997);
     });
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
