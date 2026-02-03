@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,576 +10,610 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.css">
     <link rel="stylesheet" href="assets/css/monochrome.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135967642-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-135967642-1');
-    </script>
 </head>
 <body>
 
-<!--Main menu-->
-<div class="menu">
-    <div class="container">
-        <div class="row">
-            <div class="menu__wrapper d-none d-lg-block col-md-12">
-                <nav class="d-flex justify-content-between">
-                    <ul>
-                        <li><a href="index.html">Hola</a></li>
-                        <li><a href="#experience">Experiencia</a></li>
-                        <li><a href="#education">Educación</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="assets/archives/alankurc-cv.pdf" download="Alan Kurc CV">Descargar CV</a></li>
+    <!--Main menu-->
+    <div class="menu">
+        <div class="container">
+            <div class="row">
+                <div class="menu__wrapper d-none d-lg-block col-md-12">
+                    <nav class="d-flex justify-content-between">
+                        <ul>
+                            <li><a href="index.html">Hola</a></li>
+                            <li><a href="#experience">Experiencia</a></li>
+                            <li><a href="#education">Educación</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="assets/archives/alankurc-cv.pdf" download="Alan Kurc CV">Descargar CV</a></li>
+                            <li><a href="http://www.someonevision.com" target="_blank">Someone Vision</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="index.html" style="pointer-events: none;">ES_</a></li>
+                            <li><a href="en/index.html">EN</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="menu__wrapper col-md-12 d-lg-none">
+                    <button type="button" class="menu__mobile-button">
+                        <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Main menu-->
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu d-lg-none">
+        <div class="container">
+            <div class="mobile-menu__close">
+                <span><i class="mdi mdi-close" aria-hidden="true"></i></span>
+            </div>
+            <nav class="mobile-menu__wrapper">
+                <ul>
+                    <li><a href="index.html">Hola</a></li>
+                    <li><a href="#experience">Experiencia</a></li>
+                    <li><a href="#education">Educación</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="assets/archives/alankurc-cv.pdf" download="Alan Kurc CV">Descargar CV</a></li>
+                    <li><a href="http://www.someonevision.com" target="_blank">Someone Vision</a></li>
+                </ul>
+                <ul>
+                    <li><a href="index.html" style="pointer-events: none;">ES_</a></li>
+                    <li><a href="en/index.html">EN</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- Mobile menu -->
+
+    <!--Header-->
+    <header class="main-header">
+        <div class="container">
+            <div class="row personal-profile">
+                <div class="col-md-4 personal-profile__avatar">
+                    <img src="assets/img/photo-perfil.jpg" alt="Alan Kurc" title="Alan Kurc" class="img-fluid">
+                </div>
+                <div class="col-md-8">
+                    <p class="personal-profile__name">Alan Kurc_</p>
+                    <p class="personal-profile__work">Software Engineer, Diseñador Multimedial</p>
+                    <div class="personal-profile__contacts">
+                        <dl class="contact-list contact-list__opacity-titles">
+                            <dt>Edad:</dt>
+                            <dd><span id="age"></span></dd>
+                            <dt>MBTI:</dt>
+                            <dd>ENTJ-A</dd>
+                            <dt>Email:</dt>
+                            <dd><a href="mailto:im.alan.kurc@gmail.com">im.alan.kurc@gmail.com</a></dd>
+                            <dt>Ubicación:</dt>
+                            <dd>Buenos Aires, Argentina</dd>
+                        </dl>
+                    </div>
+                    <p class="personal-profile__social">
+                        <a href="https://github.com/alankurc" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/alan-kurc/" target="_blank"><i
+                                class="fa fa-linkedin-square"></i></a>
+                        <a href="https://www.behance.net/alan_kurc" target="_blank"><i
+                                class="fa fa-behance-square"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Header-->
+
+    <!--Resume-->
+    <section id="resume" class="container section">
+        <section class="row" id="experience">
+            <div class="col-md-10">
+                <h2 id="resume_header" class="section__title">Resumen_</h2>
+            </div>
+            <div class="col-md-11 section__resume resume-list">
+                <h3 class="resume-list_title">experiencia</h3>
+                <article class="resume-list__block">
+                    <p class="resume-list__block-title degree">Software Engineer</p>
+                    <p class="resume-list__block-title">Mercado Libre</p>
+                    <p class="resume-list__block-date">Febrero 2024 - Act</p>
+                    <p>Mercado Libre es el E-Commerce mas grande de Latinoamérica.</p>
+                    <p class="mb-2">Dentro de Mercado Libre trabajo en el team de Inbound Shipments <em>(específicamente
+                            con los envíos de los usuarios a nuestros warehouses)</em>.</p>
+                    <p>Dentro del team trabajo como frontend utilizando lenguajes como TypeScript, ReactJs o NodeJs.</p>
+                    <p>Realizamos unit tests en todos nuestros proyectos (Tenemos que tener al menos 90% de coverage
+                        para poder subir a producción):</p>
+                    <ul class="bullet-list">
+                        <li>React Testing Library + Jest for React</li>
+                        <li>TypeScript</li>
+                        <li>NodeJS</li>
                     </ul>
-                    <ul>
-                        <li><a href="index.html" style="pointer-events: none;">ES_</a></li>
-                        <li><a href="en/index.html">EN</a></li>
+                </article>
+                <article class="resume-list__block">
+                    <p class="resume-list__block-title degree">Software Developer</p>
+                    <p class="resume-list__block-title">Mercado Libre</p>
+                    <p class="resume-list__block-date">Abril 2022 - Febrero 2024</p>
+                </article>
+                <article class="resume-list__block">
+                    <p class="resume-list__block-title degree">Profesor</p>
+                    <p class="resume-list__block-title">Escuela Da Vinci</p>
+                    <p class="resume-list__block-date">Marzo 2022 - Diciembre 2022</p>
+                    <p>Estuve un año como profesor de programación para la carrera de Diseño Multimedial en la cual los
+                        alumnos aprendían las bases del maquetado con HTML y CSS puro para después poder pasar a
+                        utilizar el framework de Bootstrap y agregando conocimientos complementarios de JQuery para las
+                        funcionalidades. Y por ultimo se les enseñaba como subir la web a un hosting.</p>
+                    <p><strong>Materias:</strong></p>
+                    <ul class="bullet-list">
+                        <li>Lógica de la Programación (HTML & CSS)</li>
+                        <li>Maquetado y Desarrollo Web (HTML | CSS & Bootstrap 5 | JQuery | Hosting)</li>
                     </ul>
-                </nav>
-            </div>
-            <div class="menu__wrapper col-md-12 d-lg-none">
-                <button type="button" class="menu__mobile-button">
-                    <span><i class="fa fa-bars" aria-hidden="true"></i></span>
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-<!--Main menu-->
-
-<!-- Mobile menu -->
-<div class="mobile-menu d-lg-none">
-    <div class="container">
-        <div class="mobile-menu__close">
-            <span><i class="mdi mdi-close" aria-hidden="true"></i></span>
-        </div>
-        <nav class="mobile-menu__wrapper">
-            <ul>
-                <li><a href="index.html">Hola</a></li>
-                <li><a href="#experience">Experiencia</a></li>
-                <li><a href="#education">Educación</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="assets/archives/alankurc-cv.pdf" download="Alan Kurc CV">Descargar CV</a></li>
-            </ul>
-            <ul>
-                <li><a href="index.html" style="pointer-events: none;">ES_</a></li>
-                <li><a href="en/index.html">EN</a></li>
-            </ul>
-        </nav>
-    </div>
-</div>
-<!-- Mobile menu -->
-
-<!--Header-->
-<header class="main-header">
-    <div class="container">
-        <div class="row personal-profile">
-            <div class="col-md-4 personal-profile__avatar">
-                <img src="assets/img/photo-perfil.jpg" alt="Alan Kurc" title="Alan Kurc" class="img-fluid">
-            </div>
-            <div class="col-md-8">
-                <p class="personal-profile__name">Alan Kurc_</p>
-                <p class="personal-profile__work">Software Engineer, Diseñador Multimedial</p>
-                <div class="personal-profile__contacts">
-                    <dl class="contact-list contact-list__opacity-titles">
-                        <dt>Edad:</dt>
-                        <dd><span id="age"></span></dd>
-                        <dt>MBTI:</dt>
-                        <dd>ENTJ-A</dd>
-                        <dt>Email:</dt>
-                        <dd><a href="mailto:im.alan.kurc@gmail.com">im.alan.kurc@gmail.com</a></dd>
-                        <dt>Ubicación:</dt>
-                        <dd>Buenos Aires, Argentina</dd>
-                    </dl>
-                </div>
-                <p class="personal-profile__social">
-                    <a href="https://github.com/alankurc" target="_blank"><i class="fa fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/alan-kurc/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-                    <a href="https://www.behance.net/alan_kurc" target="_blank"><i class="fa fa-behance-square"></i></a>
-                </p>
-            </div>
-        </div>
-    </div>
-</header>
-<!--Header-->
-
-<!--Resume-->
-<section id="resume" class="container section">
-    <section class="row" id="experience">
-        <div class="col-md-10">
-            <h2 id="resume_header" class="section__title">Resumen_</h2>
-        </div>
-        <div class="col-md-11 section__resume resume-list">
-            <h3 class="resume-list_title">experiencia</h3>
-            <article class="resume-list__block">
-                <p class="resume-list__block-title degree">Software Engineer</p>
-                <p class="resume-list__block-title">Mercado Libre</p>
-                <p class="resume-list__block-date">Febrero 2024 - Act</p>
-                <p>Mercado Libre es el E-Commerce mas grande de Latinoamérica.</p>
-                <p class="mb-2">Dentro de Mercado Libre trabajo en el team de Inbound Shipments <em>(específicamente con los envíos de los usuarios a nuestros warehouses)</em>.</p>
-                <p>Dentro del team trabajo como frontend utilizando lenguajes como TypeScript, ReactJs o NodeJs.</p>
-                <p>Realizamos unit tests en todos nuestros proyectos (Tenemos que tener al menos 90% de coverage para poder subir a producción):</p>
-                <ul class="bullet-list">
-                    <li>React Testing Library + Jest for React</li>
-                    <li>TypeScript</li>
-                    <li>NodeJS</li>
-                </ul>
-            </article>
-            <article class="resume-list__block">
-                <p class="resume-list__block-title degree">Software Developer</p>
-                <p class="resume-list__block-title">Mercado Libre</p>
-                <p class="resume-list__block-date">Abril 2022 - Febrero 2024</p>
-            </article>
-            <article class="resume-list__block">
-                <p class="resume-list__block-title degree">Profesor</p>
-                <p class="resume-list__block-title">Escuela Da Vinci</p>
-                <p class="resume-list__block-date">Marzo 2022 - Diciembre 2022</p>
-                <p>Estuve un año como profesor de programación para la carrera de Diseño Multimedial en la cual los alumnos aprendían las bases del maquetado con HTML y CSS puro para después poder pasar a utilizar el framework de Bootstrap y agregando conocimientos complementarios de JQuery para las funcionalidades. Y por ultimo se les enseñaba como subir la web a un hosting.</p>
-                <p><strong>Materias:</strong></p>
-                <ul class="bullet-list">
-                    <li>Lógica de la Programación (HTML & CSS)</li>
-                    <li>Maquetado y Desarrollo Web (HTML | CSS & Bootstrap 5 | JQuery | Hosting)</li>
-                </ul>
-            </article>
-            <article class="resume-list__block">
-                <p class="resume-list__block-title degree">Full Stack Developer</p>
-                <p class="resume-list__block-title">ESET Latinoamérica</p>
-                <p class="resume-list__block-date">Mayo 2021 - Abril 2022</p>
-                <p>Me encargaba del mantenimiento y la actualizacion del sitio empresarial de toda la region de LATAM
-                    entre otras. Tambien de la actualizacion del Front Panel de la tienda online desarrollada en
-                    Magento, en la cual tambien en conjunto con el Equipo de desarrollo implementabamos mejoras.</p>
-                <p><strong>- Tecnologías:</strong></p>
-                <ul class="bullet-list">
-                    <li>HTML | CSS | JQuery</li>
-                    <li>Bootstrap 4</li>
-                    <li>PHP & Laravel</li>
-                    <li>TYPO3</li>
-                </ul>
-                <p>Junto a las tareas diarias me comunicaba con el team de Brasil y la casa matriz en Eslovaquia para
-                    debatir e implementar mejoras en el sitio empresarial para que globalmente esten todos
-                    alineados.</p>
-            </article>
-            <article class="resume-list__block">
-                <p class="resume-list__block-title degree">Frontend Developer</p>
-                <p class="resume-list__block-title">No Limits Design</p>
-                <p class="resume-list__block-date">Marzo 2019 - Mayo 2021</p>
-                <p>Junto con la empresa Bureau Creativo nos encargabamos de manejar las webs y los envios de newsletters para <strong>American Express Corporate</strong>, <strong>Palladium Hoteles</strong> y <strong>Banco Galicia</strong>, entre otros.</p>
-                <p><strong>- Tecnologías:</strong></p>
-                <ul class="bullet-list">
-                    <li>HTML | CSS | JQuery</li>
-                    <li>Bootstrap 4</li>
-                    <li>PHP & MySQL</li>
-                    <li>WordPress (Ecommerce)</li>
-                </ul>
-                <p>- Maquetado de Emails responsive cross-browser</p>
-                <p>- Motion Graphics</p>
-                <p>Algunos de nuestros clientes mas importantes para los que trabajabamos eran <strong>Ferro Carril Oeste</strong>, <strong>Brisa</strong>, <strong>Edenor</strong>, entre otros.</p>
-            </article>
-        </div>
-    </section>
-    <section class="row" id="education">
-        <div class="col-md-6 section__resume resume-list">
-            <h3 class="resume-list_title">educación</h3>
-            <article class="resume-list__block">
-                <p class="resume-list__block-title degree">Tecnicatura Universitaria en Programación</p>
-                <p class="resume-list__block-title">Universidad Tecnológica Nacional FRGP</p>
-                <p class="resume-list__block-date">Marzo 2021 - Abandonado</p>
-                <p><em>5 Materias aprobadas:</em></p>
-                <ul class="bullet-list">
-                    <li>Inglés I</li>
-                    <li>Inglés II</li>
-                    <li>Laboratorio de Computación I</li>
-                    <li>Programación I</li>
-                    <li>Metodología de la Investigación</li>
-                </ul>
-            </article>
-            <article class="resume-list__block">
-                <p class="resume-list__block-title degree">Técnico Superior en Diseño Multimedial <sup><a href="assets/archives/constancia-titulo-DM.pdf" target="_blank"><i class="fa fa-certificate"></i></a></sup></p>
-                <p class="resume-list__block-title">Escuela Da Vinci</p>
-                <p class="resume-list__block-date">Agosto 2017 - Agosto 2020</p>
-            </article>
-            <article class="resume-list__block">
-                <p class="resume-list__block-title degree">Bachiller Cs.Socials</p>
-                <p class="resume-list__block-title">Colegio Nuestra Señora de La Paz</p>
-                <p class="resume-list__block-date">2009 - 2014</p>
-            </article>
-        </div>
-        <div class="col-md-6">
-            <div class="section__resume resume-list">
-                <h3 class="resume-list_title">Cursos</h3>
-                <article class="resume-list__block">
-                    <p class="resume-list__block-title degree">Diplomatura en Programación web FullStack <sup><a href="assets/archives/Diplomatura-Fullstack-Reactjs-Certificado.pdf" target="_blank"><i class="fa fa-certificate"></i></a></sup></p>
-                    <p class="resume-list__block-title">Centro de E-Learning UTN FRBA</p>
-                    <p class="resume-list__block-date">Noviembre 2020 - Mayo 2021</p>
-                    <p>HTML | CSS | JQuery | MySQL | NodeJs | React</p>
                 </article>
                 <article class="resume-list__block">
-                    <p class="resume-list__block-title degree">Programador Web Avanzado <sup><a href="assets/archives/Programador-Web-Avanzado-Certificado.pdf" target="_blank"><i class="fa fa-certificate"></i></a></sup></p>
-                    <p class="resume-list__block-title">Centro de E-Learning UTN FRBA</p>
-                    <p class="resume-list__block-date">Julio 2020 - Octubre 2020</p>
-                    <p>HTML | CSS | JQuery | PHP | PHP (CodeIgniter) | MySQL</p>
+                    <p class="resume-list__block-title degree">Full Stack Developer</p>
+                    <p class="resume-list__block-title">ESET Latinoamérica</p>
+                    <p class="resume-list__block-date">Mayo 2021 - Abril 2022</p>
+                    <p>Me encargaba del mantenimiento y la actualizacion del sitio empresarial de toda la region de
+                        LATAM
+                        entre otras. Tambien de la actualizacion del Front Panel de la tienda online desarrollada en
+                        Magento, en la cual tambien en conjunto con el Equipo de desarrollo implementabamos mejoras.</p>
+                    <p><strong>- Tecnologías:</strong></p>
+                    <ul class="bullet-list">
+                        <li>HTML | CSS | JQuery</li>
+                        <li>Bootstrap 4</li>
+                        <li>PHP & Laravel</li>
+                        <li>TYPO3</li>
+                    </ul>
+                    <p>Junto a las tareas diarias me comunicaba con el team de Brasil y la casa matriz en Eslovaquia
+                        para
+                        debatir e implementar mejoras en el sitio empresarial para que globalmente esten todos
+                        alineados.</p>
                 </article>
                 <article class="resume-list__block">
-                    <p class="resume-list__block-title degree">Diseño Web <sup><a href="assets/archives/multimedia.jpg" target="_blank"><i class="fa fa-certificate"></i></a></sup></p>
-                    <p class="resume-list__block-title">Instituto Argentino de Computación</p>
-                    <p class="resume-list__block-date">Marzo 2013 - Noviembre 2013</p>
-                    <p>HTML | CSS | Flash | Photoshop | Illustrator</p>
+                    <p class="resume-list__block-title degree">Frontend Developer</p>
+                    <p class="resume-list__block-title">No Limits Design</p>
+                    <p class="resume-list__block-date">Marzo 2019 - Mayo 2021</p>
+                    <p>Junto con la empresa Bureau Creativo nos encargabamos de manejar las webs y los envios de
+                        newsletters para <strong>American Express Corporate</strong>, <strong>Palladium Hoteles</strong>
+                        y <strong>Banco Galicia</strong>, entre otros.</p>
+                    <p><strong>- Tecnologías:</strong></p>
+                    <ul class="bullet-list">
+                        <li>HTML | CSS | JQuery</li>
+                        <li>Bootstrap 4</li>
+                        <li>PHP & MySQL</li>
+                        <li>WordPress (Ecommerce)</li>
+                    </ul>
+                    <p>- Maquetado de Emails responsive cross-browser</p>
+                    <p>- Motion Graphics</p>
+                    <p>Algunos de nuestros clientes mas importantes para los que trabajabamos eran <strong>Ferro Carril
+                            Oeste</strong>, <strong>Brisa</strong>, <strong>Edenor</strong>, entre otros.</p>
                 </article>
             </div>
-        </div>
-    </section>
-    <section class="row" id="languages">
-        <div class="col-12 section__resume resume-list pt-3">
-            <h3 class="resume-list_title">Idiomas</h3>
-            <article class="resume-list__block">
-                <p class="resume-list__block-title degree">Español</p>
-                <p class="resume-list__block-title">Nativo</p>
-            </article>
-            <article class="resume-list__block">
-                <p class="resume-list__block-title degree">Inglés</p>
-                <p class="resume-list__block-title">Nivel B1+</p>
-                <p class="resume-list__block-title pt-3">Cursos:</p>
-                <p><strong>Coursera:</strong> Grammar and Punctuation <sup><a href="https://coursera.org/share/873a71ea720aaec8d1943c707b91c1ce" target="_blank"><i class="fa fa-certificate"></i></a></sup></p>
-            </article>
-        </div>
-    </section>
-    <div class="row section__resume progress-list js-progress-list">
-        <div class="col-md-12">
-            <h3 class="progress-list__title mb-3">Conocimientos</h3>
-        </div>
-        <div class="col-md-11 pb-4 conocimientos">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>ReactJS</span>
-            <span>TypeScript</span>
-            <span>NodeJS</span>
-            <span>Jest & Supertest</span>
-            <span class="skill-tooltip" data-toggle="tooltip" data-placement="top" title="Laravel">PHP</span>
-            <span>MySQL</span>
-            <span>WordPress</span>
-            <span>Unity C#</span>
-            <span>Adobe XD</span>
-            <span>Figma</span>
-            <span>Illustrator</span>
-            <span>Photoshop</span>
-            <span>After Effects</span>
-            <span class="skill-tooltip" data-toggle="tooltip" data-placement="top" title="Analytics & Task Manager">Google Apps</span>
-        </div>
-        <div class="col-md-5 mr-auto">
-            <div class="progress-list__skill">
-                <p>
-                    <span class="progress-list__skill-title">UX/UI</span>
-                    <span class="progress-list__skill-value">80%</span>
-                </p>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                         aria-valuemax="100">
-                    </div>
+        </section>
+        <section class="row" id="education">
+            <div class="col-md-6 section__resume resume-list">
+                <h3 class="resume-list_title">educación</h3>
+                <article class="resume-list__block">
+                    <p class="resume-list__block-title degree">Tecnicatura Universitaria en Programación</p>
+                    <p class="resume-list__block-title">Universidad Tecnológica Nacional FRGP</p>
+                    <p class="resume-list__block-date">Marzo 2021 - Abandonado</p>
+                    <p><em>5 Materias aprobadas:</em></p>
+                    <ul class="bullet-list">
+                        <li>Inglés I</li>
+                        <li>Inglés II</li>
+                        <li>Laboratorio de Computación I</li>
+                        <li>Programación I</li>
+                        <li>Metodología de la Investigación</li>
+                    </ul>
+                </article>
+                <article class="resume-list__block">
+                    <p class="resume-list__block-title degree">Técnico Superior en Diseño Multimedial <sup><a
+                                href="assets/archives/constancia-titulo-DM.pdf" target="_blank"><i
+                                    class="fa fa-certificate"></i></a></sup></p>
+                    <p class="resume-list__block-title">Escuela Da Vinci</p>
+                    <p class="resume-list__block-date">Agosto 2017 - Agosto 2020</p>
+                </article>
+                <article class="resume-list__block">
+                    <p class="resume-list__block-title degree">Bachiller Cs.Socials</p>
+                    <p class="resume-list__block-title">Colegio Nuestra Señora de La Paz</p>
+                    <p class="resume-list__block-date">2009 - 2014</p>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <div class="section__resume resume-list">
+                    <h3 class="resume-list_title">Cursos</h3>
+                    <article class="resume-list__block">
+                        <p class="resume-list__block-title degree">Diplomatura en Programación web FullStack <sup><a
+                                    href="assets/archives/Diplomatura-Fullstack-Reactjs-Certificado.pdf"
+                                    target="_blank"><i class="fa fa-certificate"></i></a></sup></p>
+                        <p class="resume-list__block-title">Centro de E-Learning UTN FRBA</p>
+                        <p class="resume-list__block-date">Noviembre 2020 - Mayo 2021</p>
+                        <p>HTML | CSS | JQuery | MySQL | NodeJs | React</p>
+                    </article>
+                    <article class="resume-list__block">
+                        <p class="resume-list__block-title degree">Programador Web Avanzado <sup><a
+                                    href="assets/archives/Programador-Web-Avanzado-Certificado.pdf" target="_blank"><i
+                                        class="fa fa-certificate"></i></a></sup></p>
+                        <p class="resume-list__block-title">Centro de E-Learning UTN FRBA</p>
+                        <p class="resume-list__block-date">Julio 2020 - Octubre 2020</p>
+                        <p>HTML | CSS | JQuery | PHP | PHP (CodeIgniter) | MySQL</p>
+                    </article>
+                    <article class="resume-list__block">
+                        <p class="resume-list__block-title degree">Diseño Web <sup><a
+                                    href="assets/archives/multimedia.jpg" target="_blank"><i
+                                        class="fa fa-certificate"></i></a></sup></p>
+                        <p class="resume-list__block-title">Instituto Argentino de Computación</p>
+                        <p class="resume-list__block-date">Marzo 2013 - Noviembre 2013</p>
+                        <p>HTML | CSS | Flash | Photoshop | Illustrator</p>
+                    </article>
                 </div>
             </div>
-            <div class="progress-list__skill">
-                <p>
-                    <span class="progress-list__skill-title">Front-end</span>
-                    <span class="progress-list__skill-value">80%</span>
-                </p>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                         aria-valuemax="100">
-                    </div>
-                </div>
+        </section>
+        <section class="row" id="languages">
+            <div class="col-12 section__resume resume-list pt-3">
+                <h3 class="resume-list_title">Idiomas</h3>
+                <article class="resume-list__block">
+                    <p class="resume-list__block-title degree">Español</p>
+                    <p class="resume-list__block-title">Nativo</p>
+                </article>
+                <article class="resume-list__block">
+                    <p class="resume-list__block-title degree">Inglés</p>
+                    <p class="resume-list__block-title">Nivel B1+</p>
+                    <p class="resume-list__block-title pt-3">Cursos:</p>
+                    <p><strong>Coursera:</strong> Grammar and Punctuation <sup><a
+                                href="https://coursera.org/share/873a71ea720aaec8d1943c707b91c1ce" target="_blank"><i
+                                    class="fa fa-certificate"></i></a></sup></p>
+                </article>
             </div>
-            <div class="progress-list__skill">
-                <p>
-                    <span class="progress-list__skill-title">Back-end</span>
-                    <span class="progress-list__skill-value">50%</span>
-                </p>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
-                         aria-valuemax="100">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-5 mr-auto">
-            <div class="progress-list__skill">
-                <p>
-                    <span class="progress-list__skill-title">Base de Datos</span>
-                    <span class="progress-list__skill-value">50%</span>
-                </p>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
-                         aria-valuemax="100">
-                    </div>
-                </div>
-            </div>
-            <div class="progress-list__skill">
-                <p>
-                    <span class="progress-list__skill-title">SEO</span>
-                    <span class="progress-list__skill-value">60%</span>
-                </p>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                         aria-valuemax="100">
-                    </div>
-                </div>
-            </div>
-            <div class="progress-list__skill">
-                <p>
-                    <span class="progress-list__skill-title">Diseño Gráfico</span>
-                    <span class="progress-list__skill-value">90%</span>
-                </p>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                         aria-valuemax="100">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--Resume-->
-
-<!--Portfolio-->
-<section id="portfolio" class="container section pb-0">
-    <div class="container">
-        <article class="row">
+        </section>
+        <div class="row section__resume progress-list js-progress-list">
             <div class="col-md-12">
-                <h2 id="portfolio_header" class="section__title">Mi portfolio_</h2>
+                <h3 class="progress-list__title mb-3">Conocimientos</h3>
             </div>
-        </article>
-    </div>
-    <section class="row">
-        <div class="col-md-12 section__resume resume-list mb-0">
-            <article class="resume-list__block portfolio">
-                <div class="d-flex justify-content-between">
-                    <h2 class="resume-list__block-title mb-0">The Football Management Institute - Madrid</h2>
-                    <p class="resume-list__block-title mb-0">2025</p>
+            <div class="col-md-11 pb-4 conocimientos">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>ReactJS</span>
+                <span>TypeScript</span>
+                <span>NodeJS</span>
+                <span>Jest & Supertest</span>
+                <span class="skill-tooltip" data-toggle="tooltip" data-placement="top" title="Laravel">PHP</span>
+                <span>MySQL</span>
+                <span>WordPress</span>
+                <span>Unity C#</span>
+                <span>Adobe XD</span>
+                <span>Figma</span>
+                <span>Illustrator</span>
+                <span>Photoshop</span>
+                <span>After Effects</span>
+                <span class="skill-tooltip" data-toggle="tooltip" data-placement="top"
+                    title="Analytics & Task Manager">Google Apps</span>
+            </div>
+            <div class="col-md-5 mr-auto">
+                <div class="progress-list__skill">
+                    <p>
+                        <span class="progress-list__skill-title">UX/UI</span>
+                        <span class="progress-list__skill-value">80%</span>
+                    </p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                            aria-valuemax="100">
+                        </div>
+                    </div>
                 </div>
-                <div class="d-flex justify-content-between">
-                    <p class="resume-list__block-date">Stack: React - SCSS - PHP (Backend)</p>
-                    <a href="https://www.thefmimadrid.com/" target="_blank" class="resume-list__block-date">thefmimadrid.com</a>
+                <div class="progress-list__skill">
+                    <p>
+                        <span class="progress-list__skill-title">Front-end</span>
+                        <span class="progress-list__skill-value">80%</span>
+                    </p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                            aria-valuemax="100">
+                        </div>
+                    </div>
                 </div>
-            </article>
-            <article class="resume-list__block portfolio">
-                <div class="d-flex justify-content-between">
-                    <h2 class="resume-list__block-title mb-0">Fundación de Gestión y Desarrollo</h2>
-                    <p class="resume-list__block-title mb-0">2025</p>
+                <div class="progress-list__skill">
+                    <p>
+                        <span class="progress-list__skill-title">Back-end</span>
+                        <span class="progress-list__skill-value">50%</span>
+                    </p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                            aria-valuemax="100">
+                        </div>
+                    </div>
                 </div>
-                <div class="d-flex justify-content-between">
-                    <p class="resume-list__block-date">Stack: HTML - CSS - PHP - JS</p>
-                    <a href="http://www.fgd.org.ar/" target="_blank" class="resume-list__block-date">fgd.org.ar</a>
+            </div>
+            <div class="col-md-5 mr-auto">
+                <div class="progress-list__skill">
+                    <p>
+                        <span class="progress-list__skill-title">Base de Datos</span>
+                        <span class="progress-list__skill-value">50%</span>
+                    </p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                            aria-valuemax="100">
+                        </div>
+                    </div>
                 </div>
-            </article>
-            <article class="resume-list__block portfolio">
-                <div class="d-flex justify-content-between">
-                    <h2 class="resume-list__block-title mb-0">Tamini & Biaggi - Odontología Integral</h2>
-                    <p class="resume-list__block-title mb-0">2024</p>
+                <div class="progress-list__skill">
+                    <p>
+                        <span class="progress-list__skill-title">SEO</span>
+                        <span class="progress-list__skill-value">60%</span>
+                    </p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                            aria-valuemax="100">
+                        </div>
+                    </div>
                 </div>
-                <div class="d-flex justify-content-between">
-                    <p class="resume-list__block-date">Stack: HTML - CSS - JS</p>
-                    <a href="https://taminibiaggiodontologia.com/" target="_blank" class="resume-list__block-date">taminibiaggiodontologia.com</a>
+                <div class="progress-list__skill">
+                    <p>
+                        <span class="progress-list__skill-title">Diseño Gráfico</span>
+                        <span class="progress-list__skill-value">90%</span>
+                    </p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                            aria-valuemax="100">
+                        </div>
+                    </div>
                 </div>
-            </article>
-            <article class="resume-list__block portfolio">
-                <div class="d-flex justify-content-between">
-                    <h2 class="resume-list__block-title mb-0">VGFC Gloves</h2>
-                    <p class="resume-list__block-title mb-0">2024</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <p class="resume-list__block-date">Stack: WORDPRESS (ecommerce)</p>
-                    <a href="https://vgfcgloves.es/" target="_blank" class="resume-list__block-date">vgfcgloves.es</a>
-                </div>
-            </article>
-            <article class="resume-list__block portfolio">
-                <div class="d-flex justify-content-between">
-                    <h2 class="resume-list__block-title mb-0">Grupo Frangla - Desarrollo Inmobilirio</h2>
-                    <p class="resume-list__block-title mb-0">2024</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <p class="resume-list__block-date">Stack: HTML - CSS - JS - PHP</p>
-                    <a href="https://grupofrangla.com/" target="_blank" class="resume-list__block-date">grupofrangla.com</a>
-                </div>
-            </article>
-            <article class="resume-list__block portfolio">
-                <div class="d-flex justify-content-between">
-                    <h2 class="resume-list__block-title mb-0">SPECTRA Technologies</h2>
-                    <p class="resume-list__block-title mb-0">2024</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <p class="resume-list__block-date">Stack: HTML - CSS - PHP - JS</p>
-                    <a href="https://www.spectra-tec.com/" target="_blank" class="resume-list__block-date">spectra-tec.com</a>
-                </div>
-            </article>
-            <article class="resume-list__block portfolio">
-                <div class="d-flex justify-content-between">
-                    <h2 class="resume-list__block-title mb-0">HUTCH</h2>
-                    <p class="resume-list__block-title mb-0">2024</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <p class="resume-list__block-date">Stack: REACT - SCSS - PHP (backend) - LESS (backend)</p>
-                    <a href="https://hutch.com/" target="_blank" class="resume-list__block-date">hutch.com</a>
-                </div>
-            </article>
-            <article class="resume-list__block portfolio">
-                <div class="d-flex justify-content-between">
-                    <h2 class="resume-list__block-title mb-0">CH1 Sports</h2>
-                    <p class="resume-list__block-title mb-0">2024</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <p class="resume-list__block-date">Stack: WORDPRESS (ecommerce)</p>
-                    <a href="https://ch1sports.com.ar/" target="_blank" class="resume-list__block-date">ch1sports.com.ar</a>
-                </div>
-            </article>
-            <article class="resume-list__block portfolio">
-                <div class="d-flex justify-content-between">
-                    <h2 class="resume-list__block-title mb-0">DBSound</h2>
-                    <p class="resume-list__block-title mb-0">2023</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <p class="resume-list__block-date">Stack: WORDPRESS</p>
-                    <a href="https://dbsoundesign.com/" target="_blank" class="resume-list__block-date">(discontinued) dbsoundesign.com</a>
-                </div>
-            </article>
-            <article class="resume-list__block portfolio">
-                <div class="d-flex justify-content-between">
-                    <h2 class="resume-list__block-title mb-0">Odontologia Thames</h2>
-                    <p class="resume-list__block-title mb-0">2023</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <p class="resume-list__block-date">Stack: HTML - CSS - JS</p>
-                    <a href="https://odontologiathames.com/" target="_blank" class="resume-list__block-date">odontologiathames.com</a>
-                </div>
-            </article>
-            <article class="resume-list__block portfolio">
-                <div class="d-flex justify-content-between">
-                    <h2 class="resume-list__block-title mb-0">ModulARQ</h2>
-                    <p class="resume-list__block-title mb-0">2023</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <p class="resume-list__block-date">Stack: HTML - CSS - JS - PHP</p>
-                    <a href="https://arquiplast.com.ar/construccionesmodulares/" target="_blank" class="resume-list__block-date">(discontinued) arquiplast.com.ar/construccionesmodulares</a>
-                </div>
-            </article>
-            <article class="resume-list__block portfolio">
-                <div class="d-flex justify-content-between">
-                    <h2 class="resume-list__block-title mb-0">MovilHauss</h2>
-                    <p class="resume-list__block-title mb-0">2023</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <p class="resume-list__block-date">Stack: HTML - CSS - JS - PHP</p>
-                    <a href="https://movilhauss.com/" target="_blank" class="resume-list__block-date">movilhauss.com</a>
-                </div>
-            </article>
-            <article class="resume-list__block portfolio">
-                <div class="d-flex justify-content-between">
-                    <h2 class="resume-list__block-title mb-0">Festival de Caminatas - Caminatas</h2>
-                    <p class="resume-list__block-title mb-0">2023</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <p class="resume-list__block-date">Stack: HTML - CSS - JS (mapbox)</p>
-                    <a href="https://festivaldecaminatas.com.ar/caminatas/" target="_blank" class="resume-list__block-date">festivaldecaminatas.com.ar/caminatas</a>
-                </div>
-            </article>
-            <article class="resume-list__block portfolio">
-                <div class="d-flex justify-content-between">
-                    <h2 class="resume-list__block-title mb-0">Festival de Caminatas</h2>
-                    <p class="resume-list__block-title mb-0">2022</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <p class="resume-list__block-date">Stack: WORDPRESS</p>
-                    <a href="https://festivaldecaminatas.com.ar/" target="_blank" class="resume-list__block-date">festivaldecaminatas.com.ar</a>
-                </div>
-            </article>
-            <article class="resume-list__block portfolio">
-                <div class="d-flex justify-content-between">
-                    <h2 class="resume-list__block-title mb-0">Arquiplast</h2>
-                    <p class="resume-list__block-title mb-0">2021</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <p class="resume-list__block-date">Stack: WORDPRESS (ecommerce)</p>
-                    <a href="https://arquiplast.com.ar/" target="_blank" class="resume-list__block-date">(discontinued) arquiplast.com.ar</a>
-                </div>
-            </article>
-            <article class="resume-list__block portfolio">
-                <div class="d-flex justify-content-between">
-                    <h2 class="resume-list__block-title mb-0">MicroHistorias</h2>
-                    <p class="resume-list__block-title mb-0">2021</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <p class="resume-list__block-date">Stack: WORDPRESS</p>
-                    <a href="https://microhistorias.com.ar/" target="_blank" class="resume-list__block-date">microhistorias.com.ar</a>
-                </div>
-            </article>
-            <article class="resume-list__block portfolio">
-                <div class="d-flex justify-content-between">
-                    <h2 class="resume-list__block-title mb-0">Hogar y Tecnología</h2>
-                    <p class="resume-list__block-title mb-0">2021</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <p class="resume-list__block-date">Stack: WORDPRESS (ecommerce)</p>
-                    <a href="https://hogarytecnologia.com.ar/" target="_blank" class="resume-list__block-date">(discontinued) hogarytecnologia.com.ar</a>
-                </div>
-            </article>
-            <article class="resume-list__block portfolio">
-                <div class="d-flex justify-content-between">
-                    <h2 class="resume-list__block-title mb-0">Agencia Pangea</h2>
-                    <p class="resume-list__block-title mb-0">2021</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <p class="resume-list__block-date">Stack: HTML - CSS - JS</p>
-                    <a href="https://akurc.com/pangea.github.io/" target="_blank" class="resume-list__block-date">agencia-pangea.tech</a>
-                </div>
-            </article>
-            <article class="resume-list__block portfolio">
-                <div class="d-flex justify-content-between">
-                    <h2 class="resume-list__block-title mb-0">#MallorcaDesignDaya</h2>
-                    <p class="resume-list__block-title mb-0">2019</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <p class="resume-list__block-date">Stack: HTML - CSS - JS</p>
-                    <a href="https://www.mallorcadesignday.es/" target="_blank" class="resume-list__block-date">mallorcadesignday.es</a>
-                </div>
-            </article>
-        </div>
-    </section>
-</section>
-<!--Portfolio-->
-
-<!--Footer-->
-<footer>
-    <section class="container py-3">
-        <div class="row">
-            <div class="col-12 text-center text-white">
-                <p class="mb-0"><span id="year"></span> - Alan Kurc</p>
             </div>
         </div>
     </section>
-</footer>
-<!--Footer-->
+    <!--Resume-->
 
-<script src="assets/js/jquery-3.6.1.min.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/menu.js"></script>
-<script src="assets/js/jquery.waypoints.js"></script>
-<script src="assets/js/progress-list.js"></script>
-<script src="assets/js/section.js"></script>
-<script src="assets/js/portfolio-filter.js"></script>
-<script src="assets/js/mobile-menu.js"></script>
-<script src="assets/js/mbclicker.min.js"></script>
-<script>
-    var ano = (new Date).getFullYear();
-    $(document).ready(function () {
-        $("#year").text(ano);
-        $("#age").text(ano - 1997);
-    });
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
-</script>
+    <!--Portfolio-->
+    <section id="portfolio" class="container section pb-0">
+        <div class="container">
+            <article class="row">
+                <div class="col-md-12">
+                    <h2 id="portfolio_header" class="section__title">Mi portfolio_</h2>
+                </div>
+            </article>
+        </div>
+        <section class="row">
+            <div class="col-md-12 section__resume resume-list mb-0">
+                <article class="resume-list__block portfolio">
+                    <div class="d-flex justify-content-between">
+                        <h2 class="resume-list__block-title mb-0">The Football Management Institute - Madrid</h2>
+                        <p class="resume-list__block-title mb-0">2025</p>
+                    </div>
+                    <div class="d-flex-column d-md-flex justify-content-between">
+                        <p class="resume-list__block-date">Stack: React - SCSS - PHP (Backend)</p>
+                        <a href="https://www.thefmimadrid.com/" target="_blank"
+                            class="resume-list__block-date">thefmimadrid.com</a>
+                    </div>
+                </article>
+                <article class="resume-list__block portfolio">
+                    <div class="d-flex justify-content-between">
+                        <h2 class="resume-list__block-title mb-0">Fundación de Gestión y Desarrollo</h2>
+                        <p class="resume-list__block-title mb-0">2025</p>
+                    </div>
+                    <div class="d-flex-column d-md-flex justify-content-between">
+                        <p class="resume-list__block-date">Stack: HTML - CSS - PHP - JS</p>
+                        <a href="http://www.fgd.org.ar/" target="_blank" class="resume-list__block-date">fgd.org.ar</a>
+                    </div>
+                </article>
+                <article class="resume-list__block portfolio">
+                    <div class="d-flex justify-content-between">
+                        <h2 class="resume-list__block-title mb-0">Tamini & Biaggi - Odontología Integral</h2>
+                        <p class="resume-list__block-title mb-0">2024</p>
+                    </div>
+                    <div class="d-flex-column d-md-flex justify-content-between">
+                        <p class="resume-list__block-date">Stack: HTML - CSS - JS</p>
+                        <a href="https://taminibiaggiodontologia.com/" target="_blank"
+                            class="resume-list__block-date">taminibiaggiodontologia.com</a>
+                    </div>
+                </article>
+                <article class="resume-list__block portfolio">
+                    <div class="d-flex justify-content-between">
+                        <h2 class="resume-list__block-title mb-0">VGFC Gloves</h2>
+                        <p class="resume-list__block-title mb-0">2024</p>
+                    </div>
+                    <div class="d-flex-column d-md-flex justify-content-between">
+                        <p class="resume-list__block-date">Stack: WORDPRESS (ecommerce)</p>
+                        <a href="https://vgfcgloves.es/" target="_blank"
+                            class="resume-list__block-date">vgfcgloves.es</a>
+                    </div>
+                </article>
+                <article class="resume-list__block portfolio">
+                    <div class="d-flex justify-content-between">
+                        <h2 class="resume-list__block-title mb-0">Grupo Frangla - Desarrollo Inmobilirio</h2>
+                        <p class="resume-list__block-title mb-0">2024</p>
+                    </div>
+                    <div class="d-flex-column d-md-flex justify-content-between">
+                        <p class="resume-list__block-date">Stack: HTML - CSS - JS - PHP</p>
+                        <a href="https://grupofrangla.com/" target="_blank"
+                            class="resume-list__block-date">(discontinued) grupofrangla.com</a>
+                    </div>
+                </article>
+                <article class="resume-list__block portfolio">
+                    <div class="d-flex justify-content-between">
+                        <h2 class="resume-list__block-title mb-0">SPECTRA Technologies</h2>
+                        <p class="resume-list__block-title mb-0">2024</p>
+                    </div>
+                    <div class="d-flex-column d-md-flex justify-content-between">
+                        <p class="resume-list__block-date">Stack: HTML - CSS - PHP - JS</p>
+                        <a href="https://www.spectra-tec.com/" target="_blank"
+                            class="resume-list__block-date">spectra-tec.com</a>
+                    </div>
+                </article>
+                <article class="resume-list__block portfolio">
+                    <div class="d-flex justify-content-between">
+                        <h2 class="resume-list__block-title mb-0">HUTCH</h2>
+                        <p class="resume-list__block-title mb-0">2024</p>
+                    </div>
+                    <div class="d-flex-column d-md-flex justify-content-between">
+                        <p class="resume-list__block-date">Stack: REACT - SCSS - PHP (backend) - LESS (backend)</p>
+                        <a href="https://hutch.com.ar/" target="_blank" class="resume-list__block-date">hutch.com.ar</a>
+                    </div>
+                </article>
+                <article class="resume-list__block portfolio">
+                    <div class="d-flex justify-content-between">
+                        <h2 class="resume-list__block-title mb-0">CH1 Sports</h2>
+                        <p class="resume-list__block-title mb-0">2024</p>
+                    </div>
+                    <div class="d-flex-column d-md-flex justify-content-between">
+                        <p class="resume-list__block-date">Stack: WORDPRESS (ecommerce)</p>
+                        <a href="https://ch1sports.com.ar/" target="_blank"
+                            class="resume-list__block-date">(discontinued) ch1sports.com.ar</a>
+                    </div>
+                </article>
+                <article class="resume-list__block portfolio">
+                    <div class="d-flex justify-content-between">
+                        <h2 class="resume-list__block-title mb-0">DBSound</h2>
+                        <p class="resume-list__block-title mb-0">2023</p>
+                    </div>
+                    <div class="d-flex-column d-md-flex justify-content-between">
+                        <p class="resume-list__block-date">Stack: WORDPRESS</p>
+                        <a href="https://dbsoundesign.com/" target="_blank"
+                            class="resume-list__block-date">(discontinued) dbsoundesign.com</a>
+                    </div>
+                </article>
+                <article class="resume-list__block portfolio">
+                    <div class="d-flex justify-content-between">
+                        <h2 class="resume-list__block-title mb-0">Odontologia Thames</h2>
+                        <p class="resume-list__block-title mb-0">2023</p>
+                    </div>
+                    <div class="d-flex-column d-md-flex justify-content-between">
+                        <p class="resume-list__block-date">Stack: HTML - CSS - JS</p>
+                        <a href="https://odontologiathames.com/" target="_blank"
+                            class="resume-list__block-date">odontologiathames.com</a>
+                    </div>
+                </article>
+                <article class="resume-list__block portfolio">
+                    <div class="d-flex justify-content-between">
+                        <h2 class="resume-list__block-title mb-0">ModulARQ</h2>
+                        <p class="resume-list__block-title mb-0">2023</p>
+                    </div>
+                    <div class="d-flex-column d-md-flex justify-content-between">
+                        <p class="resume-list__block-date">Stack: HTML - CSS - JS - PHP</p>
+                        <a href="https://arquiplast.com.ar/construccionesmodulares/" target="_blank"
+                            class="resume-list__block-date">(discontinued) arquiplast.com.ar/construccionesmodulares</a>
+                    </div>
+                </article>
+                <article class="resume-list__block portfolio">
+                    <div class="d-flex justify-content-between">
+                        <h2 class="resume-list__block-title mb-0">MovilHauss</h2>
+                        <p class="resume-list__block-title mb-0">2023</p>
+                    </div>
+                    <div class="d-flex-column d-md-flex justify-content-between">
+                        <p class="resume-list__block-date">Stack: HTML - CSS - JS - PHP</p>
+                        <a href="https://movilhauss.com/" target="_blank"
+                            class="resume-list__block-date">movilhauss.com</a>
+                    </div>
+                </article>
+                <article class="resume-list__block portfolio">
+                    <div class="d-flex justify-content-between">
+                        <h2 class="resume-list__block-title mb-0">Festival de Caminatas - Caminatas</h2>
+                        <p class="resume-list__block-title mb-0">2023</p>
+                    </div>
+                    <div class="d-flex-column d-md-flex justify-content-between">
+                        <p class="resume-list__block-date">Stack: HTML - CSS - JS (mapbox)</p>
+                        <a href="https://festivaldecaminatas.com.ar/caminatas/" target="_blank"
+                            class="resume-list__block-date">festivaldecaminatas.com.ar/caminatas</a>
+                    </div>
+                </article>
+                <article class="resume-list__block portfolio">
+                    <div class="d-flex justify-content-between">
+                        <h2 class="resume-list__block-title mb-0">Festival de Caminatas</h2>
+                        <p class="resume-list__block-title mb-0">2022</p>
+                    </div>
+                    <div class="d-flex-column d-md-flex justify-content-between">
+                        <p class="resume-list__block-date">Stack: WORDPRESS</p>
+                        <a href="https://festivaldecaminatas.com.ar/" target="_blank"
+                            class="resume-list__block-date">festivaldecaminatas.com.ar</a>
+                    </div>
+                </article>
+                <article class="resume-list__block portfolio">
+                    <div class="d-flex justify-content-between">
+                        <h2 class="resume-list__block-title mb-0">Arquiplast</h2>
+                        <p class="resume-list__block-title mb-0">2021</p>
+                    </div>
+                    <div class="d-flex-column d-md-flex justify-content-between">
+                        <p class="resume-list__block-date">Stack: WORDPRESS (ecommerce)</p>
+                        <a href="https://arquiplast.com.ar/" target="_blank"
+                            class="resume-list__block-date">(discontinued) arquiplast.com.ar</a>
+                    </div>
+                </article>
+                <article class="resume-list__block portfolio">
+                    <div class="d-flex justify-content-between">
+                        <h2 class="resume-list__block-title mb-0">MicroHistorias</h2>
+                        <p class="resume-list__block-title mb-0">2021</p>
+                    </div>
+                    <div class="d-flex-column d-md-flex justify-content-between">
+                        <p class="resume-list__block-date">Stack: WORDPRESS</p>
+                        <a href="https://microhistorias.com.ar/" target="_blank"
+                            class="resume-list__block-date">microhistorias.com.ar</a>
+                    </div>
+                </article>
+                <article class="resume-list__block portfolio">
+                    <div class="d-flex justify-content-between">
+                        <h2 class="resume-list__block-title mb-0">Hogar y Tecnología</h2>
+                        <p class="resume-list__block-title mb-0">2021</p>
+                    </div>
+                    <div class="d-flex-column d-md-flex justify-content-between">
+                        <p class="resume-list__block-date">Stack: WORDPRESS (ecommerce)</p>
+                        <a href="https://hogarytecnologia.com.ar/" target="_blank"
+                            class="resume-list__block-date">(discontinued) hogarytecnologia.com.ar</a>
+                    </div>
+                </article>
+                <article class="resume-list__block portfolio">
+                    <div class="d-flex justify-content-between">
+                        <h2 class="resume-list__block-title mb-0">Agencia Pangea</h2>
+                        <p class="resume-list__block-title mb-0">2021</p>
+                    </div>
+                    <div class="d-flex-column d-md-flex justify-content-between">
+                        <p class="resume-list__block-date">Stack: HTML - CSS - JS</p>
+                        <a href="https://akurc.com/pangea.github.io/" target="_blank"
+                            class="resume-list__block-date">agencia-pangea.tech</a>
+                    </div>
+                </article>
+                <article class="resume-list__block portfolio">
+                    <div class="d-flex justify-content-between">
+                        <h2 class="resume-list__block-title mb-0">#MallorcaDesignDaya</h2>
+                        <p class="resume-list__block-title mb-0">2019</p>
+                    </div>
+                    <div class="d-flex-column d-md-flex justify-content-between">
+                        <p class="resume-list__block-date">Stack: HTML - CSS - JS</p>
+                        <a href="https://www.mallorcadesignday.es/" target="_blank"
+                            class="resume-list__block-date">mallorcadesignday.es</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </section>
+    <!--Portfolio-->
+
+    <!--Footer-->
+    <footer>
+        <section class="container py-3">
+            <div class="row">
+                <div class="col-12 text-center text-white">
+                    <p class="mb-0"><span id="year"></span> - Alan Kurc</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!--Footer-->
+
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <script src="assets/js/progress-list.js"></script>
+    <script src="assets/js/section.js"></script>
+    <script src="assets/js/portfolio-filter.js"></script>
+    <script src="assets/js/mobile-menu.js"></script>
+    <script src="assets/js/mbclicker.min.js"></script>
+    <script>
+        var ano = (new Date).getFullYear();
+        $(document).ready(function () {
+            $("#year").text(ano);
+            $("#age").text(ano - 1997);
+        });
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 </body>
+
 </html>
